@@ -131,7 +131,7 @@ mod tests {
     use crate::config::{MetaInfo, PathInfo, PathMap, Sensitivity, KV};
     // Helper to create a provider instance using the constant vault name
     async fn create_provider() -> AzureKeyVault {
-        AzureKeyVault::new("test-akv", &"jorgetestdevkv")
+        AzureKeyVault::new("test-akv", &"tellertestkv")
             .await
             .expect(
                 "Failed to create AzureKeyVault provider for testing. Ensure TEST_VAULT_NAME \
